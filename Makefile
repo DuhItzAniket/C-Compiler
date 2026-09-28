@@ -7,14 +7,14 @@ SRCS = $(SRC_DIR)/lexer.c $(SRC_DIR)/parser.c $(SRC_DIR)/codegen.c $(SRC_DIR)/ma
 OBJS = $(SRCS:.c=.o)
 TARGET = c_compiler
 
-.PHONY: all clean
+.PHONY: all clean run
 
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $@ $^
 
-$(SRC_DIR)/%.o: $(SRC_DIR)/%.c $(INC_DIR)/%.h
+$(SRC_DIR)/%.o: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) -I$(INC_DIR) -c $< -o $@
 
 clean:
