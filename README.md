@@ -14,13 +14,6 @@ A modular C-to-x86-64-assembly compiler written from scratch in C.
 ▒▒▒██████████▒▒              
 ▒▒▒▒▀██████▀▒▒▒              
 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒              
-
-
-
-
-
-
-
 ```
 
 ## Overview
