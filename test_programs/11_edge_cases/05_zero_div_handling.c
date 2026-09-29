@@ -1,0 +1,8 @@
+int main(void) {
+    int a = 10;
+    int b = 0;
+    if (b != 0) {
+        return a / b;
+    }
+    return 0;
+}
