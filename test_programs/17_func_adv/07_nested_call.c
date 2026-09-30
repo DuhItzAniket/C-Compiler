@@ -1,0 +1,12 @@
+int double_it(int x) {
+    return x * 2;
+}
+
+int quad(int x) {
+    return double_it(double_it(x));
+}
+
+int main(void) {
+    quad(3);
+    return 0;
+}
